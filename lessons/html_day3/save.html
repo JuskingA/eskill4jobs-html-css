@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Saved Information</h2>
+    <div class="info">
+        <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+        <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Phone Number:</strong> <span id="displayPhone"></span></p>
+        <p><strong>Course:</strong> <span id="displayCourse"></span></p>
+    </div>
+</div>
+
+<script>
+    // Retrieve the stored data and display it
+    document.getElementById('displayFirstName').textContent = localStorage.getItem('firstName');
+    document.getElementById('displayLastName').textContent = localStorage.getItem('lastName');
+    document.getElementById('displayGender').textContent = localStorage.getItem('gender');
+    document.getElementById('displayEmail').textContent = localStorage.getItem('email');
+    document.getElementById('displayPhone').textContent = localStorage.getItem('phone');
+    document.getElementById('displayCourse').textContent = localStorage.getItem('course');
+</script>
+
+</body>
+</html>

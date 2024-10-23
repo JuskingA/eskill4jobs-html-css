@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration Form</title>
+    <style>
+        /* Same styles as before */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>School Registration Form</h2>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+            <div class="error" id="firstNameError">First name is required</div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+            <div class="error" id="lastNameError">Last name is required</div>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male" id="male"> Male
+            <input type="radio" name="gender" value="Female" id="female"> Female
+            <div class="error" id="genderError">Gender selection is required</div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <div class="error" id="emailError">Valid email is required</div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            <div class="error" id="phoneError">Phone number is required</div>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="">Select a course</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Literature">Literature</option>
+            </select>
+            <div class="error" id="courseError">Course selection is required</div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Clear previous errors
+        document.querySelectorAll('.error').forEach(error => error.style.display = 'none');
+
+        // Form validation
+        let isValid = true;
+
+        // First Name validation
+        const firstName = document.getElementById('firstName').value;
+        if (!firstName) {
+            document.getElementById('firstNameError').style.display = 'block';
+            isValid = false;
+        }
+
+        // Last Name validation
+        const lastName = document.getElementById('lastName').value;
+        if (!lastName) {
+            document.getElementById('lastNameError').style.display = 'block';
+            isValid = false;
+        }
+
+        // Gender validation
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+            document.getElementById('genderError').style.display = 'block';
+            isValid = false;
+        }
+
+        // Email validation
+        const email = document.getElementById('email').value;
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!email || !emailPattern.test(email)) {
+            document.getElementById('emailError').style.display = 'block';
+            isValid = false;
+        }
+
+        // Phone validation
+        const phone = document.getElementById('phone').value;
+        if (!phone) {
+            document.getElementById('phoneError').style.display = 'block';
+            isValid = false;
+        }
+
+        // Course validation
+        const course = document.getElementById('course').value;
+        if (!course) {
+            document.getElementById('courseError').style.display = 'block';
+            isValid = false;
+        }
+
+        // If all fields are valid, save data to localStorage
+        if (isValid) {
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('lastName', lastName);
+            localStorage.setItem('gender', gender.value);
+            localStorage.setItem('email', email);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('course', course);
+
+            // Redirect to the save page
+            window.location.href = 'save.html';
+        }
+    });
+</script>
+
+</body>
+</html>
