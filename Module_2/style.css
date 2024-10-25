@@ -16,4 +16,7 @@
  }
  .bg{
      background-color: red;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
  }
