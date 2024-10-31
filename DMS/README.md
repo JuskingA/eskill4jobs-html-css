@@ -1,19 +1,19 @@
-Here’s a comprehensive README.md for MySQL commands with examples:
-
-```markdown
 # MySQL Commands Guide
 
 This guide provides a comprehensive list of MySQL commands with examples for each, covering basic to advanced commands.
 
 ## Table of Contents
-1. [Database Operations](#database-operations)
-2. [Table Operations](#table-operations)
-3. [CRUD Operations](#crud-operations)
-4. [Clauses](#clauses)
-5. [Joins](#joins)
-6. [Indexes](#indexes)
-7. [Views](#views)
-8. [Transactions](#transactions)
+- [MySQL Commands Guide](#mysql-commands-guide)
+  - [Table of Contents](#table-of-contents)
+    - [Database Operations](#database-operations)
+    - [Table Operations](#table-operations)
+    - [CRUD Operations](#crud-operations)
+    - [Clauses](#clauses)
+    - [Joins](#joins)
+    - [Indexes](#indexes)
+    - [Views](#views)
+    - [Transactions](#transactions)
+  - [Additional Notes](#additional-notes)
 
 ---
 
