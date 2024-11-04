@@ -37,3 +37,16 @@
 
 // $time = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
 // alert($time);
+
+
+///Data types in JavaScript///
+/*permitive data types
+let x = 10;  // Number
+let y = '10'; // String
+let z = true; // Boolean
+let a = null; // Null
+let b = undefined; // Undefined
+*/
+
+// let c = {}; // Object
+// let d = []; // Array
