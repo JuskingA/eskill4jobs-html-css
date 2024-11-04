@@ -149,3 +149,15 @@ else if (age1 >= 13) {
 else {
     console.log('You are a minor');
 }
+
+// using the else if statement
+let age2 = 25;
+if (age2 >= 18) {
+    console.log('You are an adult');
+} 
+else if (age2 >= 13) {
+    console.log('You are a teenager');
+} 
+else {
+    console.log('You are a minor');
+}
