@@ -107,7 +107,7 @@ let b = undefined; // Undefined
 // console.log(result);
 
 // logical operaters
-let a = true;  
+/*let a = true;  
 let b = false;
 let c = true;
 let d = false;
@@ -127,5 +127,25 @@ result1 = !c;
 console.log(result1);
 
 result1 = !d;
-console.log(result1);
+console.log(result1);*/
 
+//conditional statements
+let age = 18;
+if (age >= 18) {
+    console.log('You are an adult');
+} 
+else {
+    console.log('You are a minor');
+}
+
+// using the else if statement
+let age1 = 15;
+if (age1 >= 18) {
+    console.log('You are an adult');
+} 
+else if (age1 >= 13) {
+    console.log('You are a teenager');
+} 
+else {
+    console.log('You are a minor');
+}
