@@ -207,25 +207,40 @@ switch (day) {
 // }
 
 // do while loop
-let j = 0;
-do {    
-    console.log(j);
-    j++;
-} while (j < 10);
+// let j = 0;
+// do {    
+//     console.log(j);
+//     j++;
+// } while (j < 10);
 
-// for in loop
-const person = {
-    name: 'John',
-    age: 30,
-    city: 'New York'
-};
-for (let key in person) {
-    console.log(key, person[key]);
-} 
+// // for in loop
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+// };
+// for (let key in person) {
+//     console.log(key, person[key]);
+// } 
 
-// for of loop
-const fruits = ['apple', 'banana', 'orange'];
-for (let fruit of fruits) {
-    console.log(fruit);
+// // for of loop
+// const fruits = ['apple', 'banana', 'orange'];
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+  
+// functions in JavaScript
+// function add(x, y) {
+//     return x + y;
+// }
+// console.log(add(5, 10));        
+
+// function greet(name) {
+//     return 'Hello' + ' ' + name;
+// }
+// console.log(greet('John'));
+
+function multiplyNum(a, b){
+    console.log(a * b);
 }
-    
+multiplyNum(5, 10);
