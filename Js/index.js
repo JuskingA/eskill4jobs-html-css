@@ -245,27 +245,64 @@ switch (day) {
 // }
 // multiplyNum(5, 10);
 
-// function to calculate the area of a rectangle
-function calculateArea(width, height) {
-    return width * height;
-}
-console.log(calculateArea(2, 16));  
+// // function to calculate the area of a rectangle
+// function calculateArea(width, height) {
+//     return width * height;
+// }
+// console.log(calculateArea(2, 16));  
 
-// function to calculate the area of a circle 
-function calculateArea(radius) {
-    return Math.PI * radius**2;
-}
-console.log(calculateArea(5));
+// // function to calculate the area of a circle 
+// function calculateArea(radius) {
+//     return Math.PI * radius**2;
+// }
+// console.log(calculateArea(5));
 
-// function to calculate the area of a triangle
-function calculateArea(base, height) {
-    return (base * height) / 2;
-}
-console.log(calculateArea(5, 10));
+// // function to calculate the area of a triangle
+// function calculateArea(base, height) {
+//     return (base * height) / 2;
+// }
+// console.log(calculateArea(5, 10));
 
-// function to calculate the area of a square        
-function calculateArea(side) {
-    return side**2; 
-}               
-console.log(calculateArea(5));  
+// // function to calculate the area of a square        
+// function calculateArea(side) {
+//     return side**2; 
+// }               
+// console.log(calculateArea(5));  
 
+// Arrays in JavaScript
+ let fruits = ['apple', 'banana', 'orange'];
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers[0]);
+console.log(numbers[1]);    
+console.log(numbers[2]);
+console.log(numbers[3]);
+console.log(numbers[4]);
+
+let mixed = ['apple', 1, 'banana', 2, 'orange', 3];
+console.log(mixed[0]);
+console.log(mixed[1]);
+console.log(mixed[2]);    
+console.log(mixed[3]);    
+console.log(mixed[4]);
+console.log(mixed[5]); 
+
+// array methods
+let numbers1 = [1, 2, 3, 4, 5];
+numbers1.push('six'); // adds an element to the end of the array
+console.log(numbers1); 
+numbers1.pop(); // removes the last element from the array
+console.log(numbers1);
+numbers1.unshift('zero'); // adds an element to the beginning of the array
+console.log(numbers1);
+numbers1.shift(); // removes the first element from the array
+console.log(numbers1);
+
+// // iterating over an array
+// let numbers2 = [1, 2, 3, 4, 5];
+// for (let i = 0; i < numbers2.length; i++) {
+//     console.log(numbers2[i]);
+// }
