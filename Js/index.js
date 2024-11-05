@@ -269,40 +269,54 @@ switch (day) {
 // }               
 // console.log(calculateArea(5));  
 
-// Arrays in JavaScript
- let fruits = ['apple', 'banana', 'orange'];
-console.log(fruits[0]);
-console.log(fruits[1]);
-console.log(fruits[2]);
+// // Arrays in JavaScript
+//  let fruits = ['apple', 'banana', 'orange'];
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
 
-let numbers = [1, 2, 3, 4, 5];
-console.log(numbers[0]);
-console.log(numbers[1]);    
-console.log(numbers[2]);
-console.log(numbers[3]);
-console.log(numbers[4]);
+// let numbers = [1, 2, 3, 4, 5];
+// console.log(numbers[0]);
+// console.log(numbers[1]);    
+// console.log(numbers[2]);
+// console.log(numbers[3]);
+// console.log(numbers[4]);
 
-let mixed = ['apple', 1, 'banana', 2, 'orange', 3];
-console.log(mixed[0]);
-console.log(mixed[1]);
-console.log(mixed[2]);    
-console.log(mixed[3]);    
-console.log(mixed[4]);
-console.log(mixed[5]); 
+// let mixed = ['apple', 1, 'banana', 2, 'orange', 3];
+// console.log(mixed[0]);
+// console.log(mixed[1]);
+// console.log(mixed[2]);    
+// console.log(mixed[3]);    
+// console.log(mixed[4]);
+// console.log(mixed[5]); 
 
-// array methods
-let numbers1 = [1, 2, 3, 4, 5];
-numbers1.push('six'); // adds an element to the end of the array
-console.log(numbers1); 
-numbers1.pop(); // removes the last element from the array
-console.log(numbers1);
-numbers1.unshift('zero'); // adds an element to the beginning of the array
-console.log(numbers1);
-numbers1.shift(); // removes the first element from the array
-console.log(numbers1);
+// // array methods
+// let numbers1 = [1, 2, 3, 4, 5];
+// numbers1.push('six'); // adds an element to the end of the array
+// console.log(numbers1); 
+// numbers1.pop(); // removes the last element from the array
+// console.log(numbers1);
+// numbers1.unshift('zero'); // adds an element to the beginning of the array
+// console.log(numbers1);
+// numbers1.shift(); // removes the first element from the array
+// console.log(numbers1);
 
-// // iterating over an array
-// let numbers2 = [1, 2, 3, 4, 5];
-// for (let i = 0; i < numbers2.length; i++) {
-//     console.log(numbers2[i]);
+// iterating over an array
+// // for loops
+// let fruits1 = ['apple', 'banana', 'orange']; // array
+// for (let i = 0; i < fruits1.length; i++) { // for loop to iterate over the array
+//     console.log(fruits1[i]); // outputs each element of the array
 // }
+
+// // forEach loop
+// let numbers2 = [1, 2, 3, 4, 5]; // array 
+// numbers2.forEach(function(number) { // forEach loop to iterate over the array
+//     console.log(number); // outputs each element of the array
+// });
+
+// map method
+let numbers3 = [1, 2, 3, 4, 5]; // array
+let doubledNumbers = numbers3.map(function(number) { // map method to double each element of the array
+    return number * 2; // returns the double of each element of the array
+});
+console.log(doubledNumbers);
