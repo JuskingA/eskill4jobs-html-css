@@ -130,7 +130,7 @@ result1 = !d;
 console.log(result1);*/
 
 //conditional statements
-let age = 18;
+/*let age = 18;
 if (age >= 18) {
     console.log('You are an adult');
 } 
@@ -160,10 +160,10 @@ else if (age2 >= 13) {
 } 
 else {
     console.log('You are a minor');
-}
+}*/
 
 // switch statement
-let day = 2;
+/*let day = 2;
 switch (day) {
     case 1:
         console.log('Monday');
@@ -188,6 +188,44 @@ switch (day) {
         break;
     default:        
         console.log('Invalid day');
-}
+}*/
 
 // loops in JavaScript
+// for loop
+// for (let i = 0; i < 10; i++) {
+//      console.log(i);
+//  }
+
+//  for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
+// while loop
+// let i = 0;
+// while (i < 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// do while loop
+let j = 0;
+do {    
+    console.log(j);
+    j++;
+} while (j < 10);
+
+// for in loop
+const person = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+};
+for (let key in person) {
+    console.log(key, person[key]);
+} 
+
+// for of loop
+const fruits = ['apple', 'banana', 'orange'];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+    

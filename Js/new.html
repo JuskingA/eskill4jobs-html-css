@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Advisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input[type="number"] {
+            padding: 8px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Weather Advisor</h2>
+    <input type="number" id="temperature" placeholder="Enter temperature in °C">
+    <button onclick="getWeatherAdvice()">Check Weather</button>
+    <p id="message"></p>
+</div>
+
+<script>
+    function getWeatherAdvice() {
+        // Get the temperature input value
+        const temperature = parseFloat(document.getElementById("temperature").value);
+        const message = document.getElementById("message");
+
+        // Determine the appropriate message based on the temperature range
+        if (temperature > 30) {
+            message.textContent = "It's a hot day! Stay hydrated.";
+        } else if (temperature >= 20 && temperature <= 30) {
+            message.textContent = "It's a nice day! Enjoy the weather.";
+        } else if (temperature >= 10 && temperature <= 19) {
+            message.textContent = "It's a bit chilly. Consider a jacket.";
+        } else if (!isNaN(temperature)) {
+            message.textContent = "It's cold outside! Dress warmly.";
+        } else {
+            message.textContent = "Please enter a valid temperature.";
+        }
+    }
+</script>
+
+</body>
+</html>
