@@ -240,7 +240,32 @@ switch (day) {
 // }
 // console.log(greet('John'));
 
-function multiplyNum(a, b){
-    console.log(a * b);
+// function multiplyNum(a, b){
+//     console.log(a * b);
+// }
+// multiplyNum(5, 10);
+
+// function to calculate the area of a rectangle
+function calculateArea(width, height) {
+    return width * height;
 }
-multiplyNum(5, 10);
+console.log(calculateArea(2, 16));  
+
+// function to calculate the area of a circle 
+function calculateArea(radius) {
+    return Math.PI * radius**2;
+}
+console.log(calculateArea(5));
+
+// function to calculate the area of a triangle
+function calculateArea(base, height) {
+    return (base * height) / 2;
+}
+console.log(calculateArea(5, 10));
+
+// function to calculate the area of a square        
+function calculateArea(side) {
+    return side**2; 
+}               
+console.log(calculateArea(5));  
+
