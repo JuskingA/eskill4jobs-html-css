@@ -399,3 +399,46 @@ console.log(person1.address.zip); // outputs the value of the zip property
 
 // changing the value of an object property
 person1.age = 31;
+
+// adding a new property to an object
+person1.email = 's4Tb0@example.com';
+
+// removing a property from an object
+delete person1.gender;
+
+console.log(person1);
+
+// adding functions to an object
+// create an object called person
+let person2 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    dob: '01-01-2000',
+    age: 30,
+    gender: 'male',
+    Hobbies: ['reading', 'swimming', 'hiking'],
+    address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        zip: '10001',
+    },
+    getFullName: function() {
+        return this.firstName + ' ' + this.lastName;
+    },
+    getAge: function() {
+        return this.age;
+    },
+    getHobbies: function() {
+        return this.Hobbies;
+    },
+    getAddress: function() {
+        return this.address;
+    },
+};
+
+console.log(person2.getFullName()); // outputs the full name of the person
+console.log(person2.getAge()); // outputs the age of the person
+console.log(person2.getHobbies()); // outputs the hobbies of the person
+console.log(person2.getAddress()); // outputs the address of the person
+
