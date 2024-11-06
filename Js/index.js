@@ -315,8 +315,87 @@ switch (day) {
 // });
 
 // map method
-let numbers3 = [1, 2, 3, 4, 5]; // array
-let doubledNumbers = numbers3.map(function(number) { // map method to double each element of the array
-    return number * 2; // returns the double of each element of the array
-});
-console.log(doubledNumbers);
+// let numbers3 = [1, 2, 3, 4, 5]; // array
+// let doubledNumbers = numbers3.map(function(number) { // map method to double each element of the array
+//     return number * 2; // returns the double of each element of the array
+// });
+// console.log(doubledNumbers);
+
+
+// // create an array of student grades
+// let grades = [80, 85, 90, 95, 100];
+
+// //add new grade to the array
+// grades.push(105);
+
+// // update and existing grade at a specific index
+// grades[2] = 95;
+
+// // delete a grade by its index in the array
+// grades.splice(3, 1);
+
+// // log the index of a grade in the array into the console
+// console.log(grades.indexOf(85));
+
+// // log all the values in the array to the console
+//  grades.forEach(function(grade) {
+//     console.log(grade);
+//  });
+
+ //Object Oriented Programming in JavaScript
+// create an object called person
+let person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    dob: '01-01-2000',
+    age: 30,
+    gender: 'male',
+    Hobbies: ['reading', 'swimming', 'hiking'],
+};
+
+// access object properties
+console.log(person); // outputs the entire object
+console.log(person.firstName); // outputs the value of the firstName property
+console.log(person.lastName); // outputs the value of the lastName property
+console.log(person.dob); // outputs the value of the dob property
+console.log(person.age); // outputs the value of the age property
+console.log(person.gender); // outputs the value of the gender property
+console.log(person.Hobbies); // outputs the value of the Hobbies property
+console.log(person.Hobbies[0]); // outputs the first element of the Hobbies property
+
+
+// object within an object
+// create an object called person
+let person1 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    dob: '01-01-2000',
+    age: 30,
+    gender: 'male',
+    Hobbies: ['reading', 'swimming', 'hiking'],
+    address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        zip: '10001',
+    },
+}
+
+// access object properties
+console.log(person1); // outputs the entire object  
+console.log(person1.firstName); // outputs the value of the firstName property
+console.log(person1.lastName); // outputs the value of the lastName property
+console.log(person1.dob); // outputs the value of the dob property
+console.log(person1.age); // outputs the value of the age property
+console.log(person1.gender); // outputs the value of the gender property
+console.log(person1.Hobbies); // outputs the value of the Hobbies property
+console.log(person1.Hobbies[0]); // outputs the first element of the Hobbies property
+console.log(person1.address); // outputs the value of the address property
+console.log(person1.address.street); // outputs the value of the street property
+console.log(person1.address.city); // outputs the value of the city property
+console.log(person1.address.state); // outputs the value of the state property
+console.log(person1.address.zip); // outputs the value of the zip property
+
+
+// changing the value of an object property
+person1.age = 31;
