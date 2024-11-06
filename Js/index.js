@@ -442,3 +442,17 @@ console.log(person2.getAge()); // outputs the age of the person
 console.log(person2.getHobbies()); // outputs the hobbies of the person
 console.log(person2.getAddress()); // outputs the address of the person
 
+
+// constructor function
+// create a constructor function called Person
+function Person(firstName, lastName, age, gender) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+}
+
+// create an object called person
+let person3 = new Person('John', 'Doe', 30, 'male');
+console.log(person3);
+
