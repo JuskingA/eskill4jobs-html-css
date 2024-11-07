@@ -342,117 +342,152 @@ switch (day) {
 //     console.log(grade);
 //  });
 
- //Object Oriented Programming in JavaScript
-// create an object called person
-let person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    dob: '01-01-2000',
-    age: 30,
-    gender: 'male',
-    Hobbies: ['reading', 'swimming', 'hiking'],
-};
+//  //Object Oriented Programming in JavaScript
+// // create an object called person
+// let person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     dob: '01-01-2000',
+//     age: 30,
+//     gender: 'male',
+//     Hobbies: ['reading', 'swimming', 'hiking'],
+// };
 
-// access object properties
-console.log(person); // outputs the entire object
-console.log(person.firstName); // outputs the value of the firstName property
-console.log(person.lastName); // outputs the value of the lastName property
-console.log(person.dob); // outputs the value of the dob property
-console.log(person.age); // outputs the value of the age property
-console.log(person.gender); // outputs the value of the gender property
-console.log(person.Hobbies); // outputs the value of the Hobbies property
-console.log(person.Hobbies[0]); // outputs the first element of the Hobbies property
+// // access object properties
+// console.log(person); // outputs the entire object
+// console.log(person.firstName); // outputs the value of the firstName property
+// console.log(person.lastName); // outputs the value of the lastName property
+// console.log(person.dob); // outputs the value of the dob property
+// console.log(person.age); // outputs the value of the age property
+// console.log(person.gender); // outputs the value of the gender property
+// console.log(person.Hobbies); // outputs the value of the Hobbies property
+// console.log(person.Hobbies[0]); // outputs the first element of the Hobbies property
 
 
-// object within an object
-// create an object called person
-let person1 = {
-    firstName: 'John',
-    lastName: 'Doe',
-    dob: '01-01-2000',
-    age: 30,
-    gender: 'male',
-    Hobbies: ['reading', 'swimming', 'hiking'],
-    address: {
-        street: '123 Main St',
-        city: 'New York',
-        state: 'NY',
-        zip: '10001',
+// // object within an object
+// // create an object called person
+// let person1 = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     dob: '01-01-2000',
+//     age: 30,
+//     gender: 'male',
+//     Hobbies: ['reading', 'swimming', 'hiking'],
+//     address: {
+//         street: '123 Main St',
+//         city: 'New York',
+//         state: 'NY',
+//         zip: '10001',
+//     },
+// }
+
+// // access object properties
+// console.log(person1); // outputs the entire object  
+// console.log(person1.firstName); // outputs the value of the firstName property
+// console.log(person1.lastName); // outputs the value of the lastName property
+// console.log(person1.dob); // outputs the value of the dob property
+// console.log(person1.age); // outputs the value of the age property
+// console.log(person1.gender); // outputs the value of the gender property
+// console.log(person1.Hobbies); // outputs the value of the Hobbies property
+// console.log(person1.Hobbies[0]); // outputs the first element of the Hobbies property
+// console.log(person1.address); // outputs the value of the address property
+// console.log(person1.address.street); // outputs the value of the street property
+// console.log(person1.address.city); // outputs the value of the city property
+// console.log(person1.address.state); // outputs the value of the state property
+// console.log(person1.address.zip); // outputs the value of the zip property
+
+
+// // changing the value of an object property
+// person1.age = 31;
+
+// // adding a new property to an object
+// person1.email = 's4Tb0@example.com';
+
+// // removing a property from an object
+// delete person1.gender;
+
+// console.log(person1);
+
+// // adding functions to an object
+// // create an object called person
+// let person2 = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     dob: '01-01-2000',
+//     age: 30,
+//     gender: 'male',
+//     Hobbies: ['reading', 'swimming', 'hiking'],
+//     address: {
+//         street: '123 Main St',
+//         city: 'New York',
+//         state: 'NY',
+//         zip: '10001',
+//     },
+//     getFullName: function() {
+//         return this.firstName + ' ' + this.lastName;
+//     },
+//     getAge: function() {
+//         return this.age;
+//     },
+//     getHobbies: function() {
+//         return this.Hobbies;
+//     },
+//     getAddress: function() {
+//         return this.address;
+//     },
+// };
+
+// console.log(person2.getFullName()); // outputs the full name of the person
+// console.log(person2.getAge()); // outputs the age of the person
+// console.log(person2.getHobbies()); // outputs the hobbies of the person
+// console.log(person2.getAddress()); // outputs the address of the person
+
+
+// // constructor function
+// // create a constructor function called Person
+// function Person(firstName, lastName, age, gender) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.gender = gender;
+// }
+
+// // create an object called person
+// let person3 = new Person('John', 'Doe', 30, 'male');
+// console.log(person3);
+
+// array of Objects 
+// creating array of objects
+let toDos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true,
     },
-}
-
-// access object properties
-console.log(person1); // outputs the entire object  
-console.log(person1.firstName); // outputs the value of the firstName property
-console.log(person1.lastName); // outputs the value of the lastName property
-console.log(person1.dob); // outputs the value of the dob property
-console.log(person1.age); // outputs the value of the age property
-console.log(person1.gender); // outputs the value of the gender property
-console.log(person1.Hobbies); // outputs the value of the Hobbies property
-console.log(person1.Hobbies[0]); // outputs the first element of the Hobbies property
-console.log(person1.address); // outputs the value of the address property
-console.log(person1.address.street); // outputs the value of the street property
-console.log(person1.address.city); // outputs the value of the city property
-console.log(person1.address.state); // outputs the value of the state property
-console.log(person1.address.zip); // outputs the value of the zip property
-
-
-// changing the value of an object property
-person1.age = 31;
-
-// adding a new property to an object
-person1.email = 's4Tb0@example.com';
-
-// removing a property from an object
-delete person1.gender;
-
-console.log(person1);
-
-// adding functions to an object
-// create an object called person
-let person2 = {
-    firstName: 'John',
-    lastName: 'Doe',
-    dob: '01-01-2000',
-    age: 30,
-    gender: 'male',
-    Hobbies: ['reading', 'swimming', 'hiking'],
-    address: {
-        street: '123 Main St',
-        city: 'New York',
-        state: 'NY',
-        zip: '10001',
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true,
     },
-    getFullName: function() {
-        return this.firstName + ' ' + this.lastName;
+    {
+        id: 3,
+        text: 'Dentist appointment',
+        isCompleted: false,
     },
-    getAge: function() {
-        return this.age;
-    },
-    getHobbies: function() {
-        return this.Hobbies;
-    },
-    getAddress: function() {
-        return this.address;
-    },
-};
+    {
+        id: 4,
+        text: 'Cook dinner',
+        isCompleted: true,
+    },    
+];
 
-console.log(person2.getFullName()); // outputs the full name of the person
-console.log(person2.getAge()); // outputs the age of the person
-console.log(person2.getHobbies()); // outputs the hobbies of the person
-console.log(person2.getAddress()); // outputs the address of the person
+// accessing array of objects
+console.log(toDos); // outputs the entire array
+console.log(toDos[0]); // outputs the first element of the array
+console.log(toDos[0].text); // outputs the value of the text property of the first element of the array
 
-
-// constructor function
-// create a constructor function called Person
-function Person(firstName, lastName, age, gender) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.gender = gender;
-}
-
-// create an object called person
-let person3 = new Person('John', 'Doe', 30, 'male');
-console.log(person3);
+// forEach loop to iterate over the array of objects
+toDos.forEach(function(todo) {
+    console.log(todo.text); // outputs the value of the text property of each element of the array
+})
 
