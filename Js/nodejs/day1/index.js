@@ -22,3 +22,6 @@ console.log(fullName); // Output: Jusking Adjei Nyarko  // Importing the fullNam
 
 const fs = require('fs'); // Importing the fs module
 const validator = require('validator'); // Importing the validator module
+validator.isEmail('foo@bar.com');   //=> true
+const isEmail = validator.isEmail('Jusking@gmail.com');  // Validating an email address
+console.log(isEmail); // Output: true

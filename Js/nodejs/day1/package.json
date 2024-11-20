@@ -1,0 +1,15 @@
+{
+  "name": "node-day1",
+  "version": "1.1.0",
+  "description": "my node tutorial file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jusking Adjei Nyarko",
+  "license": "ISC",
+  "dependencies": {
+    "inspirational-quotes": "^2.0.1",
+    "validator": "^13.12.0"
+  }
+}
